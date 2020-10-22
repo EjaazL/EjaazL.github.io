@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Ejaaz MineSweeper</title>
+    </head>
+    <body>
+        <div class="gameMenu">
+            <div class="gameButton" data-size="8x10x10">Easy</div>
+            <div class="gameButton" data-size="14x18x40"> Hard</div>
+        </div>
+        <div class="gridwrapper">
+            <div class="grid grid-easy"></div>
+            <div class="grid grid-hard"></div>
+            <p> Instructions
+            <br>Left Click to reveal Tile
+            <br>Right click to place marker
+            <br>Can you find the secret message?</p>
+        </div>
+
+        <div class="status">
+        <div class="gameTimer">Time taken: 0</div>
+        <div class="flags"></div>
+      </div>
+        <div id="overlay">
+          <div id="overlayin">
+            <p class="big glow">GAME OVER</p>
+          </div>  
+        </div>    
+      </div>      
+      <div id="overlay2">
+        <div id="overlayin2">
+          <p class="big glow">YOU WIN</p>
+          <p class="big glow">It took you <span class="gameTimer"> 0 </span>seconds</p>
+        </div>  
+      </div>    
+    </div>      
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="msgame.js" language="JavaScript"></script>
+        <script src="./hammer.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </body>
+</html>
